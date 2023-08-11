@@ -8,15 +8,20 @@ h1 {
     font-size: 50px;
 }
 
-.img-title{
+.img-title {
     width: 100%;
-    background-image: url("assets/images/shades.jpg");
+    height: 100%;
+    background-image: url("/assets/images/shades-1440.jpg");
     background-size: cover;
 }
 
 .center-title{
     text-align: center;
     align-items: center;
+    /* width: 100%;
+    height: 100%;
+    background-image: url("/assets/images/shades.jpg");
+    background-size: cover; */
 }
 
 @media screen and (max-width: 768px) {
