@@ -3,7 +3,7 @@
 ## Description
 
 
-This project was built to help future employers view my projects and showcase the quaility of my work. 
+This project was built to help future employers and collaborators view my projects and showcase the quaility of my work. It will be periodically updated to reflect the ongoing changes and progress through the various projects I am continuing to work on.
 
 
 ## Usage
@@ -12,6 +12,9 @@ This project was built to help future employers view my projects and showcase th
 Download the project files and use an IDE to open the project folder. Preview the index.html file in browser for a demonstration of the project code. 
 
 or visit the link below:
+
+https://dpprdgls.github.io/Project-Portfolio/
+
 
 
 
