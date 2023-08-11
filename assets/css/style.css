@@ -8,6 +8,17 @@ h1 {
     font-size: 50px;
 }
 
+.img-title{
+    width: 100%;
+    background-image: url("assets/images/shades.jpg");
+    background-size: cover;
+}
+
+.center-title{
+    text-align: center;
+    align-items: center;
+}
+
 @media screen and (max-width: 768px) {
     /* Use flex-direction to stack the navbar, sidebar, and body */
     main,
