@@ -3,15 +3,24 @@
 /* * {
     font-family: 'Courier New', Courier, monospace;
 } */
+@font-face {
+    font-family: "glassAntiqua";
+    src: url("/assets/fonts/glass-antiqua.regular-webfont.woff");
+  }
 
-.body {
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: black;
 }
-    
 
+p {
+    color: white;
+    font-family: ;
+}
+/* */
+/* Splash page image container */
 .container {
     display: flex;
     justify-content: center;
@@ -20,12 +29,6 @@
     background-color: black;
   }
 
-  /* .image-container {
-    position: relative;
-    max-width: 100%;
-    height: 100%;
-    overflow: hidden;
-  } */
   
   .image-container {
     position: relative;
@@ -35,12 +38,7 @@
     margin: 0;
     background-color: black;
   }
-/* 
-  .image-container img {
-    max-width: 100%;
-    height: 100%;
-    display: block;
-  } */
+
 
 
   .image-container img {
@@ -48,7 +46,7 @@
     height: auto;
     display: block;
   }
-
+/* centered overlay text  */
   .overlay-text {
     position: absolute;
     top: 50%;
@@ -56,11 +54,12 @@
     transform: translate(-50%, -50%);
     color: white;
     padding: 10px 20px;
-    font-size: 36px;
+    font-size: 48px;
     font-weight: bold;
     text-align: center;
+    font-family: "glassAntiqua", arial, helvetica;
   }
-
+/* left overlay text year */
   .overlay-text-left {
     position: absolute;
     top: 10%;
@@ -72,7 +71,7 @@
     font-weight: bold;
     text-align: center;
   }
-
+/* right overlay text name */
  .overlay-text-right {
     position: absolute;
     top: 10%;
@@ -84,7 +83,7 @@
     font-weight: bold;
     text-align: center;
  }
-
+/* sticky nav bar that stays in place once you scroll down the page */
  .navbar {
     position: sticky;
     top: 0;
@@ -92,7 +91,7 @@
     width: 100%;
     background-color:black;
     color: white;
-    /* padding: 10px 10px; */
+    padding: 10px 10px;
     color: white;
     z-index: 1;
   }
@@ -114,17 +113,30 @@
 .navbar li {
     margin-right: 20px;
   }
-
-  .navbar a {
+/* nav bar with color transition */
+.navbar a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     transition: color 0.3s ease;
   }
 
-  .navbar a:hover {
-    color: #ffc107;
+.navbar a:hover {
+    color: #ffb565;
   }
+
+.container-content{
+    display: flex;
+}
+
+.container-about{
+
+}
+
+
+
+
+
 
 @media screen and (max-width: 768px) {
     /* Use flex-direction to stack the navbar, sidebar, and body */
