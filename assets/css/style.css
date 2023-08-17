@@ -235,15 +235,17 @@ section {
 .contact-flex-container > p {
     display: inline-block;
     float: right;
+    justify-content: space-around;
 }
 .contact-text {
     font-family: Arial, Helvetica, sans-serif;
 }
 .contact-img{
-    width: 150px;
+    
+    max-width: 150px;
     height: auto;
     margin: 10px auto;
-    padding: 10px;
+    padding: 20px;
 
 }
 
