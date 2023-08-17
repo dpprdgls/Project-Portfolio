@@ -152,7 +152,7 @@ section {
 } 
 
 .navbar ul li {
-    padding: 10px 10px;
+    padding: 10px 60px;
 }
 
 
@@ -211,6 +211,15 @@ section {
     text-align: center;
     align-items: center;
     margin-bottom: 20px;
+    border: 1px solid #22333B;
+    transition: transform 0.3s;
+}
+
+/* enlarge on hover */
+.flex-item-project:hover {
+    transform: scale(1.2);
+    background-color: #22333B;
+
 }
 
 .projects-flex-container > p {
@@ -224,7 +233,7 @@ section {
 }
 
 .project-img {
-    max-width: 150px;
+    max-width: 250px;
     height: auto;
     margin: 10px auto;
     padding: 20px;
@@ -245,6 +254,13 @@ section {
     text-align: center;
     align-items: center;
     margin-bottom: 20px;
+    border: 1px solid #5E503F;
+    transition: transform 0.3s;
+}
+/* enlarge div on hover */
+.contact-flex-item:hover {
+    transform: scale(1.2);
+    background-color: #5E503F;
 }
 .contact-flex-container > p {
     display: inline-block;
@@ -289,6 +305,13 @@ section {
       
     }
 
+    /* div container for splash image */
+
+    .container {
+        width: 100%;
+        height:auto;
+    }
+
     /*changing the flex direction projects */
 
     .projects-flex-container {
@@ -309,14 +332,17 @@ section {
     .navbar{
         /* position: relative; */
         align-items: center;
-        border: 1px;
-        border:#22333B;
+        border: 1px 1px solid #22333B;
+        width: 100%;
         order: 3;
     }
     /*changes the navbar flex-direction to vertical */
     .navbar ul {
         flex-direction: column;
         justify-content: center;
+        width: 100%;
+        border: 1px solid #22333B;
+
         
     }
     .navbar ul li {
@@ -329,13 +355,14 @@ section {
     display: block;
     margin: 10px auto;
     }
-    .contact-text{
+    /* .contact-text{
         font-size: 14px;
-    }
+    } */
 
     /*changing the flex direction contact */
     .contact-flex-container {
         display: inline-block;
+        width: 100%;
 
     }
 
