@@ -39,7 +39,7 @@ main {
   /*adding new code here */
 aside{
     flex: 1;
-    background-color: #ffb565;
+    background-color: black;
     padding: 20px;
     text-align: justify;
     align-items: center;
@@ -50,7 +50,7 @@ aside{
 /*adding new code here */
 section {
     flex: 2;
-    background-color: #ffb420;
+    background-color: black;
     padding: 20px;
 }
 .contact{
