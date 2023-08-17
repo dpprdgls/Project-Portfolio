@@ -147,6 +147,7 @@ section {
     display: flex;
     justify-content: flex-end;
     font-family:"Semplicita-light", "glassAntiqua", arial, helvetica;
+    
 
 } 
 
@@ -157,6 +158,10 @@ section {
 
 .navbar li {
     margin-right: 20px;
+    border: 1px;
+    border:#22333B;
+    border-style: solid;
+    /* background-color: #ffb565; */
   }
 /* nav bar with color transition */
 .navbar a {
@@ -276,13 +281,20 @@ section {
     }
     /* removes the sticky navbar and sets position to relative */
     .navbar{
-        position: relative;
+        /* position: relative; */
+        align-items: center;
+        border: 1px;
+        border:#22333B;
+        order: 3;
     }
     /*changes the navbar flex-direction to vertical */
     .navbar ul {
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        
+    }
+    .navbar ul li {
+        border: 0;
     }
    
     .about-img {
