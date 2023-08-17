@@ -4,9 +4,15 @@
     font-family: 'Courier New', Courier, monospace;
 } */
 @font-face {
+    font-family: "Semplicita-light";
+    src: url("/assets/fonts/Semplicita\ Light.otf");
+}
+
+@font-face {
     font-family: "glassAntiqua";
     src: url("/assets/fonts/glass-antiqua.regular-webfont.woff");
   }
+
 
 body {
     
@@ -92,7 +98,7 @@ section {
     font-size: 48px;
     font-weight: bold;
     text-align: center;
-    font-family: "glassAntiqua", arial, helvetica;
+    font-family:"Semplicita-light", "glassAntiqua", arial, helvetica;
   }
 /* left overlay text year */
   .overlay-text-left {
@@ -105,6 +111,7 @@ section {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+    font-family:"Semplicita-light", "glassAntiqua", arial, helvetica;
   }
 /* right overlay text name */
  .overlay-text-right {
@@ -117,6 +124,7 @@ section {
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+    font-family:"Semplicita-light", "glassAntiqua", arial, helvetica;
  }
 /* sticky nav bar that stays in place once you scroll down the page */
  .navbar {
@@ -138,6 +146,7 @@ section {
     margin: 0;
     display: flex;
     justify-content: flex-end;
+    font-family:"Semplicita-light", "glassAntiqua", arial, helvetica;
 
 } 
 
@@ -161,23 +170,30 @@ section {
     color: #ffb565;
   }
 
-
+/* about section */
+.about-flex-container{
+    display: inline-block;
+    margin-bottom: 20px;
+}
 
 .about{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
+.about-flex-container > p {
+    display: inline-block;
+    float: right;
+    margin-bottom: 20px;
 
+}
 .about-img{
     width: 100%;
+    margin-bottom: 20px;
 }
-/* 
-.about p {
-    display: flex;
-    float: left;as
-} */
 
+/* projects container */
 .projects-flex-container{
     display: inline-block;
 }
@@ -204,6 +220,7 @@ section {
     padding: 10px;
 }
 
+/* contact section */
 
 .contact-flex-container {
     display: inline-block;
@@ -225,7 +242,7 @@ section {
 .contact-img{
     width: 150px;
     height: auto;
-    margin: 10px;
+    margin: 10px auto;
     padding: 10px;
 
 }
@@ -236,8 +253,10 @@ section {
 @media screen and (max-width: 768px) {
     /* Use flex-direction to stack the navbar, sidebar, and body */
     main,
-    nav {
+    nav, 
+    section {
       flex-direction: column;
+      background-color: black;
     }
     /* Make the sidebar stack below the body */
     aside {
@@ -245,11 +264,32 @@ section {
     }
     /* Change the header background */
     header {
-      background: #772014;
+      background: black;
     }
     /* Change the navbar and footer background */
     nav,
     footer {
-      background-color: #bb8588;
+      background-color: black;
+      
+    }
+    /* removes the sticky navbar and sets position to relative */
+    .navbar{
+        position: relative;
+    }
+    /*changes the navbar flex-direction to vertical */
+    .navbar ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .about-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    }
+    .contact-text{
+        font-size: 14px;
     }
   }
